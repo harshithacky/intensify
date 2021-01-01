@@ -1,0 +1,339 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+button{
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Header starts */
+
+header{
+    width: 100%;
+}
+
+header .burger{
+    width: 32%;
+    font-size: 25px;
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    color: gray;
+    cursor: pointer;
+    
+}
+
+header .brand{
+    width: 32%;
+    float: left;
+    text-align: center;
+    
+}
+
+header .brand a{
+    color: #f6755e;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+header .login{
+    width: 32%;
+    float: left;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 20px;
+}
+
+header button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px 15px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+span{
+    transition: 0.4s ease;
+}
+
+.burger span:hover{
+    color: #f6755e;
+}
+
+header button:hover{
+    background-color: #f6755e;
+}
+
+/* Header ends */
+
+/* Banner starts here */
+
+.banner{
+    width: 100%;
+    height: 80%;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+}
+
+.banner h1{
+    margin-top: 0;
+    padding-top: 6em;
+    color: #25a2c3;
+}
+
+.banner p{
+    font-weight: 200;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.banner button{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 40px;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    background-color: #f6755e;
+}
+
+.banner button:hover{
+    background-color: #25a2c3;
+}
+
+/* Banner ends here */
+
+/* Features starts here */
+
+.features{
+    width: 75%;
+    margin: 100px auto;
+}
+
+.features .left{
+    width: 28%;
+    float: left;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.features .left h3, .features .right h3,.box h3{
+    color: #25a2c3;
+}
+
+
+.features .center{
+    width: 29%;
+    float: left;
+    text-align: center;
+}
+
+.features .center img{
+    border-radius: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.features .right{
+    width: 28%;
+    float: right;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.features p{
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+
+/* Features ends here */
+
+/* Feugiat starts here */
+
+.feugiat{
+    width: 100%;
+    text-align: center;
+    background-color: #f6755e;
+    color: #fff;
+    padding: 100px 0;
+}
+
+
+
+.feugiat q{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15px;
+}
+.feugiat .quote{
+    width: 44%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.feugiat h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.feugiat p{
+    font-size: 12px;
+    font-weight: 200;
+    
+}
+
+/* Feugiat endss here */
+
+/* Three boxes starts here */
+
+.three-box{
+    width: 75%;
+    margin: 80px auto;
+}
+
+.box{
+    width: 28%;
+    float: left;
+    border: 1px solid #dbdbdb;
+}
+.box h3{
+    padding-left: 15px;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box2{
+    width: 29%;
+    margin: 0 2.3em;
+}
+
+.three-box p{
+    font-weight: 200;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+/* Three boxes ends here */
+
+/* Footer starts here */
+
+footer{
+    width: 100%;
+    background-color: #25a2c3;
+    padding: 2.5em 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer .social{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.phone,.message,.location{
+    width: 32.5%;
+    float: left;
+    color: #f6755e;
+}
+
+.social-text{
+    color: #fff;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+
+footer hr{
+    margin: 0 auto;
+    width: 20%;
+    color: rgb(rgba(255, 255, 255, 0.4));
+    background-color: rgb(rgba(255, 255, 255, 0.4));
+}
+
+footer p{
+    font-size: .7rem;
+    font-weight: 100;
+    padding-top: 1.4em;
+}
+
+/* Footer ends here */
+
+/* Media queries */
+
+@media only screen and (max-width:900px){
+    
+    .banner p{
+        width: 90%;
+    }
+
+    .features{
+        width: 100%;
+    }
+
+    .features .center{
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .features .center img{
+        width: 90%;
+        padding: 0;
+    }
+
+    .features .left{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .features .right{
+        width: 100%;
+       
+        text-align: center;
+    }
+    
+    
+    .three-box{
+        width: 100%;
+    }
+
+    .box{
+        width: 70%;
+        float: none;
+        margin: 40px auto;
+        border: 1px solid #dbdbdb;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .phone, .message, .location{
+        width: 100%;
+        clear: both;
+        margin-bottom: 20px;
+    }
+
+    .banner p{
+        width: 90%;
+    }
+}
